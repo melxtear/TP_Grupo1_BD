@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.4">
   <diagram name="Página-1" id="_7hjYO3Eg4ipRepWvSzz">
-    <mxGraphModel dx="2516" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1747" dy="1623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="qG-8T-zHR3JYp14bLmiY-1" value="MEDICAMENTO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="290" y="140" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-2" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-2" value="Nombre_med" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="70" y="70" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-3" value="ID_medicamento" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="110" y="190" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-4" value="Tipo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-4" value="Tipo_med" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="100" y="20" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-4" target="qG-8T-zHR3JYp14bLmiY-1" edge="1">
@@ -82,10 +82,10 @@
         <mxCell id="qG-8T-zHR3JYp14bLmiY-19" value="Presentacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="370" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-20" value="Almacenamiento" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-20" value="Almacenado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="490" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-21" value="Efectos adversos" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-21" value="Efectos_adversos" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="510" y="60" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-22" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-1" target="qG-8T-zHR3JYp14bLmiY-19" edge="1">
@@ -121,7 +121,7 @@
             <mxPoint x="1103" y="225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-28" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-28" value="Nombre_droga" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="993" y="60" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-29" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-28" target="qG-8T-zHR3JYp14bLmiY-25" edge="1">
@@ -136,14 +136,11 @@
         <mxCell id="qG-8T-zHR3JYp14bLmiY-38" value="ID_Lote_Droga" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="980" y="300" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-39" value="&lt;strike&gt;ID_droga&lt;/strike&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="960" y="365" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-40" value="Estado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1263" y="365" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-41" value="Fecha_ingreso" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1278" y="300" width="100" height="40" as="geometry" />
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-41" value="Fecha_ingreso_lotedroga" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1278" y="300" width="162" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-42" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-40" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -151,9 +148,9 @@
             <mxPoint x="1210" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-43" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-39" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-43" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="943" y="325" as="sourcePoint" />
+            <mxPoint x="1060" y="385" as="sourcePoint" />
             <mxPoint x="1040" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -175,12 +172,9 @@
         <mxCell id="qG-8T-zHR3JYp14bLmiY-47" value="Resultado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="948" y="505" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-48" value="&lt;strike&gt;ID_Lote_Droga&lt;/strike&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1258" y="505" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-1" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-48" target="qG-8T-zHR3JYp14bLmiY-46" edge="1">
+        <mxCell id="hQHhv29obX2Jll2vHx8n-1" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" target="qG-8T-zHR3JYp14bLmiY-46" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="723" y="425" as="sourcePoint" />
+            <mxPoint x="1258" y="525" as="sourcePoint" />
             <mxPoint x="1200" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -199,7 +193,7 @@
             <mxPoint x="890" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-5" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-4" connectable="0" vertex="1">
+        <mxCell id="hQHhv29obX2Jll2vHx8n-5" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-4" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint x="40" as="offset" />
           </mxGeometry>
@@ -210,7 +204,7 @@
             <mxPoint x="760" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-8" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-7" connectable="0" vertex="1">
+        <mxCell id="hQHhv29obX2Jll2vHx8n-8" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-7" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -265,18 +259,10 @@
             <mxPoint x="1193" y="545" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-25" value="anterior:&lt;div&gt;(1,1)&lt;/div&gt;" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-24" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-23" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1033" y="545" as="sourcePoint" />
             <mxPoint x="1203" y="415" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-27" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;anterior:&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(1,M)&lt;/span&gt;&lt;/div&gt;" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="hQHhv29obX2Jll2vHx8n-26" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry">
-            <mxPoint y="30" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-29" value="Es analizada por" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -300,17 +286,14 @@
         <mxCell id="hQHhv29obX2Jll2vHx8n-35" value="ID_analisis_med" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="130" y="635" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-36" value="&lt;strike&gt;ID_lote_med&lt;/strike&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="150" y="695" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-37" value="Resultado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="hQHhv29obX2Jll2vHx8n-37" value="Resultado_med" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="460" y="600" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-38" value="Fecha_am" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="450" y="685" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-39" value="Tipo_analisis_m" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="390" y="735" width="100" height="40" as="geometry" />
+        <mxCell id="hQHhv29obX2Jll2vHx8n-39" value="Tipo_analisis_med" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="735" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-40" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-35" target="hQHhv29obX2Jll2vHx8n-30" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -318,9 +301,9 @@
             <mxPoint x="660" y="605" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hQHhv29obX2Jll2vHx8n-41" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-36" target="hQHhv29obX2Jll2vHx8n-30" edge="1">
+        <mxCell id="hQHhv29obX2Jll2vHx8n-41" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" target="hQHhv29obX2Jll2vHx8n-30" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="605" as="sourcePoint" />
+            <mxPoint x="235.16778152033203" y="700.7832372577386" as="sourcePoint" />
             <mxPoint x="660" y="605" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -393,7 +376,7 @@
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-28" target="qG-8T-zHR3JYp14bLmiY-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-3" value="Vende" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-3" value="Vende_proveedor" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1093" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="_4_q6WIBSaUZ8HBPJDtG-3" target="_4_q6WIBSaUZ8HBPJDtG-1" edge="1">
@@ -416,16 +399,16 @@
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-7" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="_4_q6WIBSaUZ8HBPJDtG-6" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-9" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-9" value="Nombre_prov" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="980" y="-70" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-10" value="ID_prov" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="1010" y="-175" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-11" value="Telefono" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-11" value="Telefono_prov" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1133" y="-195" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-12" value="Email" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-12" value="Email_prov" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1248" y="-175" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="_4_q6WIBSaUZ8HBPJDtG-9" target="_4_q6WIBSaUZ8HBPJDtG-1" edge="1">
@@ -452,16 +435,16 @@
             <mxPoint x="1023" y="-15" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-21" value="Vende a&amp;nbsp;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-21" value="Venta_clientes" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-100" y="130" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-22" value="CLIENTE" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-360" y="140" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-23" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-23" value="Nombre_cliente" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-510" y="220" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-24" value="Apellido" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-24" value="Apellido_cliente" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-390" y="240" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-25" value="ID_cliente" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
@@ -470,7 +453,7 @@
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-26" value="Tipo_cliente" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-503" y="90" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-27" value="Telefono" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-27" value="Telefono_cliente" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-390" y="40" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-28" value="Direccion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -541,7 +524,7 @@
             <mxPoint x="40" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-42" value="ID_venta" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-42" value="&lt;u&gt;ID_venta&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-90" y="60" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4_q6WIBSaUZ8HBPJDtG-43" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="_4_q6WIBSaUZ8HBPJDtG-21" edge="1">
@@ -553,19 +536,16 @@
         <mxCell id="Xgru5djO_54P7fr-u0QX-1" value="ID_lote_med" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="420" y="380" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Xgru5djO_54P7fr-u0QX-2" value="&lt;strike&gt;ID_medicamento&lt;/strike&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="420" y="440" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-3" value="Estado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="150" y="380" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-4" value="Fecha_ingreso" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="160" y="470" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Xgru5djO_54P7fr-u0QX-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-11" target="Xgru5djO_54P7fr-u0QX-2" edge="1">
+        <mxCell id="Xgru5djO_54P7fr-u0QX-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="490" y="480" as="sourcePoint" />
-            <mxPoint x="650" y="480" as="targetPoint" />
+            <mxPoint x="420" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-11" target="Xgru5djO_54P7fr-u0QX-1" edge="1">
@@ -586,9 +566,6 @@
             <mxPoint x="650" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Xgru5djO_54P7fr-u0QX-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Modelo Relacional&lt;/h1&gt;&lt;p&gt;Proveedor(&lt;u&gt;ID_prov&lt;/u&gt;, CUIT, Telefono_prov, Email_prov, Nombre_prov)&lt;/p&gt;&lt;p&gt;Droga (&lt;u&gt;ID_droga&lt;/u&gt;, Nombre_droga, Tipo_med, Via_adm, Requiere_receta, Vel_abs, Presentacion, Almacenamiento, Efectos_adversos, Precio_min, Precio_may)&lt;/p&gt;&lt;p&gt;Lote_Droga(&lt;u&gt;ID_lote_droga&lt;/u&gt;, ID_droga, Fecha_ingreso_lotedroga, Estado)&lt;/p&gt;&lt;p&gt;Analisis_droga(&lt;u&gt;ID_analisis_droga&lt;/u&gt;, ID_lote_droga, Fecha_ad, Resultado, Tipo_analisis_d)&lt;/p&gt;&lt;p&gt;Medicamento&lt;u&gt;(ID_medicamento&lt;/u&gt;, Nombre_med, )&lt;/p&gt;&lt;p&gt;Lote_Medicamento(&lt;u&gt;ID_lote_med&lt;/u&gt;, ID_medicamento, Estado, Fecha_ingreso)&lt;/p&gt;&lt;p&gt;Analisis_Medicamento(&lt;u&gt;ID_Analisis_Med&lt;/u&gt;, ID_medicamento, Fecha_am, Tipo_analisis_med, Resultado_med)&lt;/p&gt;&lt;p&gt;Cliente(&lt;u&gt;ID_cliente&lt;/u&gt;, Nombre_cliente, Apellido, Tipo_cliente, Telefono_cliente, Direccion, Tiene_receta)&lt;/p&gt;&lt;p&gt;Relaciones:&lt;/p&gt;&lt;p&gt;Vende_proveedor(&lt;u&gt;ID_prov&lt;/u&gt;, ID_droga, precio)&lt;/p&gt;&lt;p&gt;Compuesto(ID_medicamento, ID_droga, concentracion)&lt;/p&gt;&lt;p&gt;Tiene()&lt;/p&gt;&lt;p&gt;Vende_cliente(&lt;u&gt;ID_venta&lt;/u&gt;, ID_cliente, fecha_venta)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-40" y="1050" width="510" height="500" as="geometry" />
-        </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-11" value="CUIT" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1263" y="-95" width="100" height="40" as="geometry" />
         </mxCell>
@@ -598,26 +575,8 @@
             <mxPoint x="883" y="-25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-1" value="&lt;b&gt;YA LO CAMBIE, CUALQUIER COSA LO VEMOS&lt;/b&gt;&lt;div&gt;Ver relación droga y lote de droga, la participación es total pero la cardinalidad? Un lote de droga puede tener muchas drogas pero una droga solo puede estar en un lote de droga? NO&lt;div&gt;Si es relación N-&amp;gt;1, entonces ponemos la clave foranea ID_Lote_Droga en Droga. Si es N-&amp;gt;N, tenemos que crear una tabla para Tiene con las claves foranes de Droga y Lote Droga.&lt;/div&gt;&lt;div&gt;Igual creo ahi entendi que una droga tiene muchos lotes pero un lote es de una unica droga, asi que capaz es al reves la cardinalidad y la clave foranea iría en lote droga (lo pusiste asi pero hay que cambiar la cardinalidad)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="1398" y="185" width="435" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-2" value="&lt;b&gt;YA LO CAMBIE, CUALQUIER COSA LO VEMOS&lt;/b&gt;&lt;div&gt;Creo aca ocurre lo mismo, porque pusiste el ID_Lote_Droga en ANalisis de dorga asi que seria relación N-&amp;gt;1 y se pone clave foranea en el que tiene cardinalidad N(seria al reves). O sea Lote de droga puede someterse a muchos analisis de droga (N, analisis droga tiene clave foranea de lote de droga) y el analisis de droga solo puede realizarse en un lote de droga a la vez (1, cada analisis pertenece a un unico lote). Sino seria N-&amp;gt;N, pero me parece estaria mal:&amp;nbsp;&lt;strong data-end=&quot;765&quot; data-start=&quot;758&quot;&gt;N:N&lt;/strong&gt; significaría que &lt;strong data-end=&quot;830&quot; data-start=&quot;783&quot;&gt;un análisis puede pertenecer a varios lotes&lt;/strong&gt;, y &lt;strong data-end=&quot;873&quot; data-start=&quot;834&quot;&gt;un lote puede tener varios análisis&lt;/strong&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="1363" y="455" width="430" height="237.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Modelo Relacional Mel&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;&quot;&gt;M-&amp;gt;N&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;Proveedor(&lt;u&gt;ID_prov&lt;/u&gt;, CUIT, Telefono_prov, Email_prov, Nombre_prov) &lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(ID_Prov es clave primaria PK)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Droga (&lt;u&gt;ID_droga&lt;/u&gt;, Nombre_Droga) &lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_droga es clave primaria PK)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Vende_proveedor(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;&lt;strike&gt;ID_prov&lt;/strike&gt;&lt;/u&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;&lt;strike&gt;, ID_droga&lt;/strike&gt;&lt;/u&gt;, precio) &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(clave compuesta por dos foraneas? seria asi?, VER)&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Med_Compuesto_Por(&lt;u&gt;&lt;strike&gt;ID_medicamento&lt;/strike&gt;, &lt;strike&gt;ID_droga&lt;/strike&gt;&lt;/u&gt;, concentracion)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(clave compuesta por dos foraneas? seria asi?, VER)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Medicamento&lt;u&gt;(ID_Medicamento&lt;/u&gt;, Nombre_med, Tipo_med, Vía_Administración, Precio_Minorista, Precio_Mayorista, Presentación, Almacenado, Efectos_Adversos, Requiere_Receta, Velocidad_De_Absorción) &lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(ID_Medicamento es clave primaria)&lt;/font&gt;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Cliente(&lt;u&gt;ID_cliente&lt;/u&gt;, Nombre_cliente, Apellido_cliente, Tipo_cliente, Telefono_cliente, Direccion, Tiene_receta) &lt;font style=&quot;color: rgb(0, 0, 204);&quot;&gt;&lt;b&gt;(algún atributo monoevaluado?, VER EN GENERAL)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;Venta_clientes(ID_venta,&amp;nbsp;ID_cliente,&amp;nbsp;ID_Medicamento, fecha_venta) &lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_Venta es clave primaria, ID_Cliente y ID_Medicamento son claves foraneas, no se si las 3 forman una superclave o ya con ID_Venta es suficiente, marqué las 3 por las dudas, VER)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;1-&amp;gt;N&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lote_Droga(&lt;u&gt;ID_lote_droga&lt;/u&gt;,&amp;nbsp;&lt;strike&gt;ID_droga&lt;/strike&gt;, Fecha_ingreso_lotedroga, Estado)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(la tachada ID_droga es clave foranea FK, ID_lote_droga es primaria)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Analisis_droga(&lt;u&gt;ID_analisis_droga&lt;/u&gt;,&amp;nbsp;&lt;strike&gt;ID_lote_droga&lt;/strike&gt;, Fecha_ad, Resultado, Tipo_analisis_d)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(ID_Analisis_Droga es clave primaria, ID_Lote_Droga es clave foranea ya que hace referencia a tabla de lote de drogas)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lote_Medicamento(&lt;u&gt;ID_lote_med&lt;/u&gt;, &lt;strike&gt;ID_medicamento&lt;/strike&gt;, Estado, Fecha_ingreso)&amp;nbsp;&amp;nbsp;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_lote_med es clave primaria, ID_medicamento es clave foranea, hace referencia a tabla medicamento)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;Analisis_Medicamento(&lt;u&gt;ID_Analisis_Med&lt;/u&gt;, &lt;strike&gt;ID_lote_med&lt;/strike&gt;, Fecha_am, Tipo_analisis_med, Resultado_med) &lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_Analisis_Med es clave primaria, ID_lote_med es clave foranea ya que hace referencia a tabla Lote_Medicamento)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="500" y="1050" width="890" height="610" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-4" value="Email y telefono PODRÍAN ser multievaluados?&lt;div&gt;CUIT podria ser clave candidata ya que se supone que es único (onda DNI), de último podria ser una superclave con ID_Prov, VER&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1413" y="-195" width="225" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-5" value="Un medicamento puede estar compuesto por muchas drogas y una droga puede formar parte de muchos medicamentos. La participacion es parcial con respecto a medicamento compuesto por droga si permitimos la existencia de &lt;strong data-end=&quot;459&quot; data-start=&quot;408&quot;&gt;medicamentos que aún no tienen drogas asignadas&lt;/strong&gt;. EJEMPLO: A)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Un medicamento que está en &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;705&quot; data-start=&quot;679&quot;&gt;etapa de investigación&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; todavía &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;757&quot; data-start=&quot;714&quot;&gt;no tiene ingredientes (DROGA) activos definidos&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;. B)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Un medicamento podría estar registrado en el sistema sin especificar las drogas que lo componen&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&amp;nbsp;La participación es total con respecto a droga ya que es un sistema que solo maneja &lt;strong data-end=&quot;1317&quot; data-start=&quot;1269&quot;&gt;drogas aprobadas para su uso en medicamentos&lt;/strong&gt;, cada droga tiene que estar en al menos un medicamento. CONSIDERO ESTO POR AHORA&lt;/div&gt;&lt;div&gt;Seria asi? sino al reves, O SEA Un medicamento &lt;strong data-end=&quot;869&quot; data-start=&quot;829&quot;&gt;debe tener al menos una droga activa&lt;/strong&gt;&amp;nbsp;(PARTICIPACION TOTAL)&amp;nbsp; y&amp;nbsp;&lt;strong data-end=&quot;1165&quot; data-start=&quot;1115&quot;&gt;Si solo consideramos drogas aprobadas y en uso&lt;/strong&gt;, la participación es &lt;strong data-end=&quot;1196&quot; data-start=&quot;1187&quot;&gt;total de droga&lt;/strong&gt;&amp;nbsp;VER&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="623" y="-240" width="350" height="355" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-7" value="anterior:(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
-          <mxGeometry x="1213" y="215" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-8" value="anterior:(1,1)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1173" y="305" width="60" height="40" as="geometry" />
+        <mxCell id="nV-EVM0h0ufY6XWzIWm7-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Modelo Relacional Mel&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;&quot;&gt;M-&amp;gt;N&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;p&gt;Proveedor(&lt;u&gt;ID_prov&lt;/u&gt;, CUIT, Telefono_prov, Email_prov, Nombre_prov)&lt;/p&gt;&lt;p&gt;Droga (&lt;u&gt;ID_droga&lt;/u&gt;, Nombre_Droga)&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Vende_proveedor(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;&lt;strike&gt;ID_prov&lt;/strike&gt;&lt;/u&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;&lt;strike&gt;, ID_droga&lt;/strike&gt;&lt;/u&gt;, precio) &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(clave compuesta dos foraneas)&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Med_Compuesto_Por(&lt;u&gt;&lt;strike&gt;ID_medicamento&lt;/strike&gt;, &lt;strike&gt;ID_droga&lt;/strike&gt;&lt;/u&gt;, concentracion)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(clave compuesta por dos foraneas)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Medicamento&lt;u&gt;(ID_Medicamento&lt;/u&gt;, Nombre_med, Tipo_med, Vía_Administración, Precio_Minorista, Precio_Mayorista, Presentación, Almacenado, Efectos_Adversos, Requiere_Receta, Velocidad_De_Absorción) &lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(ID_Medicamento es clave primaria)&lt;/font&gt;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Cliente(&lt;u&gt;ID_cliente&lt;/u&gt;, Nombre_cliente, Apellido_cliente, Tipo_cliente, Telefono_cliente, Direccion, Tiene_receta)&lt;/p&gt;&lt;p&gt;Venta_clientes(&lt;u&gt;ID_venta,&lt;strike&gt;&amp;nbsp;ID_cliente&lt;/strike&gt;,&amp;nbsp;&lt;strike&gt;ID_Medicamento&lt;/strike&gt;&lt;/u&gt;, fecha_venta) &lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_Venta es clave primaria, ID_Cliente y ID_Medicamento son claves foraneas,&amp;nbsp; superclave)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;1-&amp;gt;N&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lote_Droga(&lt;u&gt;ID_lote_droga&lt;/u&gt;,&amp;nbsp;&lt;strike&gt;ID_droga&lt;/strike&gt;, Fecha_ingreso_lotedroga, Estado)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(la tachada ID_droga es clave foránea FK)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Analisis_droga(&lt;u&gt;ID_analisis_droga&lt;/u&gt;,&amp;nbsp;&lt;strike&gt;ID_lote_droga&lt;/strike&gt;, Fecha_ad, Resultado, Tipo_analisis_d)&amp;nbsp;&lt;b&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;(ID_Lote_Droga es clave foránea ya que hace referencia a tabla de lote de drogas)&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lote_Medicamento(&lt;u&gt;ID_lote_med&lt;/u&gt;, &lt;strike&gt;ID_medicamento&lt;/strike&gt;, Estado, Fecha_ingreso)&amp;nbsp;&amp;nbsp;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_medicamento es clave foránea, hace referencia a tabla medicamento)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;Analisis_Medicamento(&lt;u&gt;ID_Analisis_Med&lt;/u&gt;, &lt;strike&gt;ID_lote_med&lt;/strike&gt;, Fecha_am, Tipo_analisis_med, Resultado_med) &lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;(ID_lote_med es clave foránea ya que hace referencia a tabla Lote_Medicamento)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: rgb(153, 0, 77);&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="1000" width="890" height="610" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-9" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="1183" y="525" as="geometry" />
@@ -636,20 +595,11 @@
             <mxPoint x="37" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-16" value="anterior:(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
+        <mxCell id="nV-EVM0h0ufY6XWzIWm7-16" value="" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="340" y="210" as="geometry" />
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-17" value="anterior:(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
+        <mxCell id="nV-EVM0h0ufY6XWzIWm7-17" value="" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="340" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-18" value="anterior:(1,1)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="300" y="360" width="60" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-19" value="anterior:(1,1)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="300" y="600" width="60" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-20" value="al cambiar cardinalidad tiene sentido si clave fornaea de Lote de medicamento es ID_Medicamento ya que Lote Medicamento tiene cardinalidad N. Lo mismo para Analisis Medicamento, tiene sentido que tenga clave foranea ID_lote_med ya que tiene cardinalidad M" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="-50" y="790" width="380" height="100" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-21" value="pusiste precio en venta_proveedor, creo iria aca atributo precio? se lo agrego por las dudas" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1218" y="60" width="160" height="70" as="geometry" />
@@ -664,14 +614,8 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-25" value="la participacion es total del medicamento? es decir que un medicamento tiene que estar si o si en un lote?? lo msmo para droga y lote droga" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="30" y="305" width="260" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-28" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="370" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-29" value="Puedo tener medicamentos sin vender es decir participación parcial?&amp;nbsp;porque pueden existir medicamentos en stock que nadie ha comprado aún. O es TOTAL, esto significaría que &lt;strong data-end=&quot;1162&quot; data-start=&quot;1094&quot;&gt;todo medicamento en el sistema ha sido comprado al menos una vez&lt;/strong&gt;.&lt;div&gt;Con respecto a clientes:&amp;nbsp;Cliente es&lt;b&gt; cualquier persona registrada en el sistema&lt;/b&gt; (Participación Parcial)? o&amp;nbsp;Cliente es &lt;b&gt;solo quien ha comprado medicamentos&lt;/b&gt; (Participación Total en Cliente)?&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;POR AHORA CONSIDERAMOS TOTAL ¿?&lt;/b&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="-320" y="-110" width="430" height="145" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-30" value="Fecha_Venta" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-90" y="230" width="100" height="40" as="geometry" />
@@ -682,8 +626,17 @@
             <mxPoint x="-40" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-32" value="Agregue atributo fecha_venta ya que lo pusiste en MR pero no es MER" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="-140" y="275" width="100" height="100" as="geometry" />
+        <mxCell id="NSOzWnQ3YX-LjWJrEmLt-3" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;ID_Droga&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="960" y="365" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NSOzWnQ3YX-LjWJrEmLt-4" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;ID_Lote_Droga&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1248" y="505" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NSOzWnQ3YX-LjWJrEmLt-5" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;ID_Medicamento&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="414" y="445" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NSOzWnQ3YX-LjWJrEmLt-6" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;ID_lote_med&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="695" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
