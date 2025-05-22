@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
   <diagram name="Página-1" id="_7hjYO3Eg4ipRepWvSzz">
-    <mxGraphModel dx="3208" dy="1939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2817" dy="1744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -77,7 +77,7 @@
           <mxGeometry x="1160" y="345" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-38" value="ID_Lote_Droga" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
-          <mxGeometry x="960" y="345" width="100" height="40" as="geometry" />
+          <mxGeometry x="960" y="290" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qG-8T-zHR3JYp14bLmiY-40" value="Estado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1310" y="365" width="100" height="40" as="geometry" />
@@ -91,7 +91,7 @@
             <mxPoint x="1210" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qG-8T-zHR3JYp14bLmiY-44" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-38" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
+        <mxCell id="qG-8T-zHR3JYp14bLmiY-44" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-38" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="943" y="325" as="sourcePoint" />
             <mxPoint x="1103" y="325" as="targetPoint" />
@@ -135,7 +135,7 @@
           <mxGeometry x="280" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-11" value="LOTE MEDICAMENTO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="290" y="400" width="100" height="40" as="geometry" />
+          <mxGeometry x="290" y="380" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hQHhv29obX2Jll2vHx8n-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hQHhv29obX2Jll2vHx8n-9" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -326,13 +326,8 @@
             <mxPoint x="-190" y="175" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4_q6WIBSaUZ8HBPJDtG-41" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="_4_q6WIBSaUZ8HBPJDtG-40" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry">
-            <mxPoint x="40" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-1" value="ID_lote_med" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
-          <mxGeometry x="420" y="380" width="100" height="40" as="geometry" />
+          <mxGeometry x="430" y="330" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xgru5djO_54P7fr-u0QX-3" value="Estado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="190" y="325" width="100" height="40" as="geometry" />
@@ -378,7 +373,7 @@
           <mxGeometry x="370" y="470" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-13" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
-          <mxGeometry x="380" y="400" as="geometry" />
+          <mxGeometry x="370" y="375" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-16" value="" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="340" y="210" as="geometry" />
@@ -387,9 +382,9 @@
           <mxGeometry x="340" y="470" as="geometry" />
         </mxCell>
         <mxCell id="nV-EVM0h0ufY6XWzIWm7-22" value="Precio" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1440" y="195" width="90" height="30" as="geometry" />
+          <mxGeometry x="1460" y="345" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="nV-EVM0h0ufY6XWzIWm7-24" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="nV-EVM0h0ufY6XWzIWm7-22" target="Cwd4onZjcj6y766m40kI-38" edge="1">
+        <mxCell id="nV-EVM0h0ufY6XWzIWm7-24" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nV-EVM0h0ufY6XWzIWm7-22" target="qG-8T-zHR3JYp14bLmiY-37" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1243" y="175" as="sourcePoint" />
             <mxPoint x="1230" as="targetPoint" />
@@ -436,7 +431,7 @@
           <mxGeometry x="727" y="530" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zYYeMn6qNPkKF0j6XICj-13" value="Analisis_m" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="480" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="440" y="510" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zYYeMn6qNPkKF0j6XICj-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zYYeMn6qNPkKF0j6XICj-13" target="zYYeMn6qNPkKF0j6XICj-9" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -527,7 +522,7 @@
             <mxPoint x="270" y="-40" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-32" value="Almacenamiento_i" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="Cwd4onZjcj6y766m40kI-32" value="Almacenamiento" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="380" y="25" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-33" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="qG-8T-zHR3JYp14bLmiY-1" target="Cwd4onZjcj6y766m40kI-32" edge="1">
@@ -551,7 +546,7 @@
             <mxPoint x="1263" y="-75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-39" value="(1,M)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Cwd4onZjcj6y766m40kI-36" vertex="1" connectable="0">
+        <mxCell id="Cwd4onZjcj6y766m40kI-39" value="(1,1)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Cwd4onZjcj6y766m40kI-36" vertex="1" connectable="0">
           <mxGeometry x="0.8727" y="-1" relative="1" as="geometry">
             <mxPoint x="27" y="-4" as="offset" />
           </mxGeometry>
@@ -580,21 +575,10 @@
           <mxGeometry x="-510" y="330" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-44" value="contiene" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-310" y="395" width="120" height="60" as="geometry" />
+          <mxGeometry x="-130" y="395" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-45" value="realiza" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-650" y="395" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-47" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-44" target="7m1hwLgO3sc_shR__jOJ-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-260" y="355" as="sourcePoint" />
-            <mxPoint x="-120" y="425" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-48" value="(1,M))" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="Cwd4onZjcj6y766m40kI-47" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry">
-            <mxPoint y="40" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-50" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-45" target="Cwd4onZjcj6y766m40kI-41" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -602,20 +586,15 @@
             <mxPoint x="-350" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-51" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="Cwd4onZjcj6y766m40kI-50" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry">
-            <mxPoint x="-10" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-52" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" target="Cwd4onZjcj6y766m40kI-41" edge="1">
+        <mxCell id="Cwd4onZjcj6y766m40kI-52" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.083;exitY=0.417;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="Cwd4onZjcj6y766m40kI-41" edge="1" source="Cwd4onZjcj6y766m40kI-44">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-310" y="425" as="sourcePoint" />
             <mxPoint x="-350" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Cwd4onZjcj6y766m40kI-53" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="Cwd4onZjcj6y766m40kI-52" connectable="0" vertex="1">
+        <mxCell id="Cwd4onZjcj6y766m40kI-53" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="Cwd4onZjcj6y766m40kI-52" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
-            <mxPoint x="30" y="30" as="offset" />
+            <mxPoint x="40" y="20" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-54" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-42" target="Cwd4onZjcj6y766m40kI-41" edge="1">
@@ -637,7 +616,7 @@
           <mxGeometry x="580" y="695" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-59" value="Fecha_analisis_m" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="400" y="540" width="100" height="40" as="geometry" />
+          <mxGeometry x="370" y="590" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-60" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-59" target="zYYeMn6qNPkKF0j6XICj-13" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -646,7 +625,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-61" value="Resultado_m" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="540" y="430" width="100" height="40" as="geometry" />
+          <mxGeometry x="560" y="480" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cwd4onZjcj6y766m40kI-62" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-61" target="zYYeMn6qNPkKF0j6XICj-13" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -675,97 +654,100 @@
         <mxCell id="Cwd4onZjcj6y766m40kI-68" value="VER ESTOOO, venta tiene clave foranea de cliente, no se si venta tiene tambien lo de forma de pago y el total de la compra como atributos tambien o no son necesarios" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-750" y="580" width="270" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-1" value="DETALLE&lt;div&gt;VENTA&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-140" y="405" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-3" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-1" target="7m1hwLgO3sc_shR__jOJ-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="140" y="420" as="sourcePoint" />
-            <mxPoint x="60" y="425" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-4" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-4" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="-480" y="455" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-5" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-5" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="-710" y="445" as="geometry">
             <mxPoint x="22" y="15" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-7" value="corresponde a" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="50" y="395" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-7" target="hQHhv29obX2Jll2vHx8n-11">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-44" target="hQHhv29obX2Jll2vHx8n-11" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-400" y="390" as="sourcePoint" />
+            <mxPoint x="170" y="425" as="sourcePoint" />
             <mxPoint x="-240" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-9" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="1">
-          <mxGeometry x="-10" y="460" as="geometry" />
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-10" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="280" y="425" as="geometry">
+            <mxPoint x="4" y="5" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-10" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="1">
-          <mxGeometry x="280" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-11" value="Creo pecio mayorista y minorista irian en lote_medicamento para tener registro de los precios de los lotes.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;El precio de un medicamento puede cambiar con el tiempo o según condiciones de compra.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cada lote puede tener un precio distinto (por ejemplo, por costos de producción, promociones, fecha, o proveedores).&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Si lo pones en &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;415&quot; data-start=&quot;400&quot;&gt;Medicamento&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, tendrías un solo precio fijo para todos los lotes, y no podrías reflejar esos cambios.&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Asociar el precio al lote permite saber exactamente a qué precio se vendió cada unidad.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Así, si un lote se vende a precio mayorista y otro a minorista, queda registrado correctamente.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Para llevar cuentas claras y auditorías, es importante saber cuánto se cobró por cada lote&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-11" value="Creo pecio mayorista y minorista irian en lote_medicamento para tener registro de los precios de los lotes.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;El precio de un medicamento puede cambiar con el tiempo o según condiciones de compra.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cada lote puede tener un precio distinto (por ejemplo, por costos de producción, promociones, fecha, o proveedores).&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Si lo pones en &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;415&quot; data-start=&quot;400&quot;&gt;Medicamento&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, tendrías un solo precio fijo para todos los lotes, y no podrías reflejar esos cambios.&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Asociar el precio al lote permite saber exactamente a qué precio se vendió cada unidad.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Así, si un lote se vende a precio mayorista y otro a minorista, queda registrado correctamente.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Para llevar cuentas claras y auditorías, es importante saber cuánto se cobró por cada lote&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-630" y="62.5" width="660" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-12" value="&lt;u&gt;ID_detalle_venta&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-170" y="520" width="100" height="40" as="geometry" />
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-12" value="&lt;u&gt;ID_detalle_venta&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="495" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-13" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-13" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-180" y="325" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-14" value="precio_unitario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="325" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.7;exitY=0.048;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.379;entryY=0.977;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-12" target="7m1hwLgO3sc_shR__jOJ-1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7m1hwLgO3sc_shR__jOJ-12" target="Cwd4onZjcj6y766m40kI-41" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-400" y="330" as="sourcePoint" />
             <mxPoint x="-240" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-16" value="" style="endArrow=none;html=1;rounded=0;entryX=0.352;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-1" target="7m1hwLgO3sc_shR__jOJ-13">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-16" value="" style="endArrow=none;html=1;rounded=0;entryX=0.352;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Cwd4onZjcj6y766m40kI-41" target="7m1hwLgO3sc_shR__jOJ-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-400" y="330" as="sourcePoint" />
             <mxPoint x="-240" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.667;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.247;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-1" target="7m1hwLgO3sc_shR__jOJ-14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-400" y="330" as="sourcePoint" />
-            <mxPoint x="-240" y="330" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-18" value="total_venta" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-18" value="total_venta" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-520" y="520" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-19" value="forma_de_pago" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-19" value="forma_de_pago" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-400" y="520" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-20" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-18" target="Cwd4onZjcj6y766m40kI-41">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-20" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7m1hwLgO3sc_shR__jOJ-18" target="Cwd4onZjcj6y766m40kI-41" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-400" y="330" as="sourcePoint" />
             <mxPoint x="-240" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-21" value="" style="endArrow=none;html=1;rounded=0;exitX=0.397;exitY=0.022;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7m1hwLgO3sc_shR__jOJ-19" target="Cwd4onZjcj6y766m40kI-41">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-21" value="" style="endArrow=none;html=1;rounded=0;exitX=0.397;exitY=0.022;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7m1hwLgO3sc_shR__jOJ-19" target="Cwd4onZjcj6y766m40kI-41" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-400" y="330" as="sourcePoint" />
             <mxPoint x="-240" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-24" value="Viendo lo que nos corrigió Main en el email, creo tendria que haber una relacion entre lote_droga con medicamento o lote_medicamento mas bien, para saber que lotes de drogas se usaron para armar esos lotes de medicamentos que se vendieron, si solo lo hago con droga sabria que tipo de droga etc pero no de que lote vino para poder encontrar el problema si es que hay algun tema con la droga defectuosa.&lt;div&gt;Vicky en su momento nos dijo que no creo, pero capaz Mai opina distinto, PREGUNTAR&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-24" value="Viendo lo que nos corrigió Main en el email, creo tendria que haber una relacion entre lote_droga con medicamento o lote_medicamento mas bien, para saber que lotes de drogas se usaron para armar esos lotes de medicamentos que se vendieron, si solo lo hago con droga sabria que tipo de droga etc pero no de que lote vino para poder encontrar el problema si es que hay algun tema con la droga defectuosa.&lt;div&gt;Vicky en su momento nos dijo que no creo, pero capaz Mai opina distinto, PREGUNTAR&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1210" y="450" width="420" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-25" value="Ver de atributos multievaluados&amp;nbsp;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-25" value="Ver de atributos multievaluados&amp;nbsp;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="970" y="-135" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-26" value="Id_detalle tiene una clave foranea de id_Venta y id_lote_medicamento, tiene cantidad (se compraron 2 ibuprofenos 400 por ej) y el precio unitario que es el precio final de ese medicamento (o sea va el precio mayorista o minorista). Se hizo esta entidad ya que en venta sino tendria que poner varias columnas de todos los medicamentos que se compraron (med1, cant1, precio1, lote1, med2, cant2, precio2, lote2, etc) o sea problema de duplicado, serian varias columnas (se modifca la estructura, no se cuantos medicamentos me compró el cliente, entonces voy a tener muchos null).&amp;nbsp;&lt;div&gt;Detalle_venta me siluciona esto (ver lo anotado en papel). Venta es la factura/ticket, detalle_venta son los renglones, lo unico que se repetiria es el id_venta en cada fila pero id_detalle no y puedo ver bien todo los detalles de med1, cant1, precio1, lote1, med2, cant2, precio2, lote2, etc ya que si no existiera tendria que tewner muchas columnas per aca no. CONSULTAR IGUAL, CREO A ESTO SE REFERIA MAILEN EN EMAIL&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-26" value="Id_detalle tiene una clave foranea de id_Venta y id_lote_medicamento, tiene cantidad (se compraron 2 ibuprofenos 400 por ej) y el precio unitario que es el precio final de ese medicamento (o sea va el precio mayorista o minorista). Se hizo esta entidad ya que en venta sino tendria que poner varias columnas de todos los medicamentos que se compraron (med1, cant1, precio1, lote1, med2, cant2, precio2, lote2, etc) o sea problema de duplicado, serian varias columnas (se modifca la estructura, no se cuantos medicamentos me compró el cliente, entonces voy a tener muchos null).&amp;nbsp;&lt;div&gt;Detalle_venta me siluciona esto (ver lo anotado en papel). Venta es la factura/ticket, detalle_venta son los renglones, lo unico que se repetiria es el id_venta en cada fila pero id_detalle no y puedo ver bien todo los detalles de med1, cant1, precio1, lote1, med2, cant2, precio2, lote2, etc ya que si no existiera tendria que tewner muchas columnas per aca no. CONSULTAR IGUAL, CREO A ESTO SE REFERIA MAILEN EN EMAIL&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-410" y="590" width="730" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="7m1hwLgO3sc_shR__jOJ-28" value="Así podés decir: &lt;em data-end=&quot;1241&quot; data-start=&quot;1171&quot;&gt;“el lote LM123 del ibuprofeno cuesta $200 minorista, $150 mayorista”&lt;/em&gt;, y no afecta a otros lotes.&lt;div&gt;También preserva el &lt;strong data-end=&quot;1577&quot; data-start=&quot;1564&quot;&gt;histórico&lt;/strong&gt;: si después cambiás el precio del medicamento, sabés a cuánto se vendió en el pasado.&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="7m1hwLgO3sc_shR__jOJ-28" value="Así podés decir: &lt;em data-end=&quot;1241&quot; data-start=&quot;1171&quot;&gt;“el lote LM123 del ibuprofeno cuesta $200 minorista, $150 mayorista”&lt;/em&gt;, y no afecta a otros lotes.&lt;div&gt;También preserva el &lt;strong data-end=&quot;1577&quot; data-start=&quot;1564&quot;&gt;histórico&lt;/strong&gt;: si después cambiás el precio del medicamento, sabés a cuánto se vendió en el pasado.&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-720" y="-70" width="370" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1sYOFfmMVPcOsvIPF--1" value="Produce" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="707" y="355" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1sYOFfmMVPcOsvIPF--3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lJ1sYOFfmMVPcOsvIPF--1" target="qG-8T-zHR3JYp14bLmiY-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="410" as="sourcePoint" />
+            <mxPoint x="800" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1sYOFfmMVPcOsvIPF--4" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="lJ1sYOFfmMVPcOsvIPF--3">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-30" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1sYOFfmMVPcOsvIPF--5" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lJ1sYOFfmMVPcOsvIPF--1" target="hQHhv29obX2Jll2vHx8n-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="410" as="sourcePoint" />
+            <mxPoint x="800" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1sYOFfmMVPcOsvIPF--6" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="lJ1sYOFfmMVPcOsvIPF--5">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="40" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
