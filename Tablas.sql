@@ -26,23 +26,22 @@ DROP TABLE IF EXISTS `mydb`.`medicamento` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`medicamento` (
   `id_medicamento` INT NOT NULL,
   `nombre` VARCHAR(45) NOT NULL,
-  `precio_minorista` INT NOT NULL CHECK (precio_minorista > 0),
-  `precio_mayorista` VARCHAR(45) NULL CHECK (precio_mayorista > 0),
-  `almacenamiento` VARCHAR(45) NOT NULL,
-  `via_administración` VARCHAR(45) NOT NULL,
-  `efectos_adversos` VARCHAR(100) NOT NULL,
-  `requiere_receta` TINYINT NULL CHECK (requiere_receta IN (0,1)),
-  PRIMARY KEY (`id_medicamento`))
+  `precio_minorista` INT NOT NULL CHECK (precio_minorista > 0), -- debe ser un num entero, no nulo, y debe ser mayor que 0 para impedir datos invalidos
+  `precio_mayorista` INT NOT NULL CHECK (precio_mayorista > 0), -- debe ser un num entero, no nulo, y debe ser menor que 0 para impedir datos invalidos
+  `almacenamiento` VARCHAR(100) NOT NULL, -- condiciones de almacenamiento, no nulo ya que tiene que tener si o si las condiciones de almacenamiento, cambie de 45 a 100
+  `via_administración` VARCHAR(45) NOT NULL, -- como se administra, no nulo ya que debe decir como se administra
+  `efectos_adversos` VARCHAR(200) NOT NULL, -- efectos, no nulo ya que tiene que decir los efectos que puede tener por ingerir medicacion, cambie de 100 a 200
+  `requiere_receta` TINYINT NULL CHECK (requiere_receta IN (0,1)), -- Tipo de dato numérico muy pequeño (TINYINT), puede estar vacio? VER, el check restringe valores permitidos en 0 o 1, 1= si, requiere receta; 0= no, no requiere receta.
+  PRIMARY KEY (`id_medicamento`)) -- clave primaria es el ID
 ENGINE = InnoDB;
 
 -- Inserto datos en medicamentos
-INSERT INTO `mydb`.`medicamento` 
+INSERT INTO mydb.medicamento 
   (id_medicamento, nombre, precio_minorista, precio_mayorista, almacenamiento, via_administración, efectos_adversos, requiere_receta) VALUES
 (223, 'Paracetamol', 150.00, 130.00, 'Seco', 'Oral', 'Ninguno', 0),
 (345, 'Ibupirac cápsulas blandas', 250.00, 220.00, 'Lugar seco y temperatura ambiente', 'Oral', 'Náuseas, vómitos, diarrea, mareos, somnolencia, urticaria', 0),
 (456, 'Ibupirac Alivio Inmediato comprimidos', 300.00, 270.00, 'Lugar fresco y seco', 'Oral', 'Náuseas, vómitos, diarrea, mareos, somnolencia, urticaria', 1),
 (678, 'Voltaren inyectable', 500.00, 450.00, 'Refrigeración y proteger de la luz', 'Parenteral', 'Molestias digestivas y reacción alérgica', 1);
-
 -- -----------------------------------------------------
 -- Table `mydb`.`droga`
 -- -----------------------------------------------------
@@ -55,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`droga` (
 ENGINE = InnoDB;
 
 -- Inserto datos en droga
-INSERT INTO `mydb`.`droga` (id_droga, nombre_droga) VALUES
+INSERT INTO mydb.droga (id_droga, nombre_droga) VALUES
 (1, 'Acetaminofén'),
 (2, 'Ibuprofeno');
 -- -----------------------------------------------------
@@ -64,26 +63,26 @@ INSERT INTO `mydb`.`droga` (id_droga, nombre_droga) VALUES
 DROP TABLE IF EXISTS `mydb`.`compuesto_por` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`compuesto_por` (
-  `medicamento_id_medicamento` INT NOT NULL,
+  `medicamento_id_medicamento` INT NOT NULL, 
   `droga_id_droga` INT NOT NULL,
-  `concentración` INT NOT NULL CHECK (concentración >= 0),
-  PRIMARY KEY (`medicamento_id_medicamento`, `droga_id_droga`),
-  INDEX `fk_medicamento_has_droga_droga1_idx` (`droga_id_droga` ASC) VISIBLE,
+  `concentración` INT NOT NULL CHECK (concentración >= 0), -- tipo de dato int, no puede estar vacío, Valida que el valor ingresado sea mayor o igual a 0.
+  PRIMARY KEY (`medicamento_id_medicamento`, `droga_id_droga`), -- clave con referencia a dos claves (foraneas), clave compuesta
+  INDEX `fk_medicamento_has_droga_droga1_idx` (`droga_id_droga` ASC) VISIBLE, -- ver
   INDEX `fk_medicamento_has_droga_medicamento_idx` (`medicamento_id_medicamento` ASC) VISIBLE,
   CONSTRAINT `fk_medicamento_has_droga_medicamento`
-    FOREIGN KEY (`medicamento_id_medicamento`)
+    FOREIGN KEY (`medicamento_id_medicamento`) -- medicamento_id_medicamento es una clave foranea, apunta a otra tabla o sea medicamento
     REFERENCES `mydb`.`medicamento` (`id_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_medicamento_has_droga_droga1`
-    FOREIGN KEY (`droga_id_droga`)
+    FOREIGN KEY (`droga_id_droga`) -- droga_id_droga es una clave foranea, apunta a otra tabla o sea a droga
     REFERENCES `mydb`.`droga` (`id_droga`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 -- Inserto datos en compuesto_por
-INSERT INTO `mydb`.`compuesto_por` (medicamento_id_medicamento, droga_id_droga, concentración) VALUES
+INSERT INTO mydb.compuesto_por (medicamento_id_medicamento, droga_id_droga, concentración) VALUES
 (1, 1, 500),
 (2, 2, 400);
 -- -----------------------------------------------------
@@ -94,16 +93,21 @@ DROP TABLE IF EXISTS `mydb`.`proveedor` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`proveedor` (
   `id_proveedor` INT NOT NULL,
   `nombre_proveedor` VARCHAR(45) NOT NULL,
-  `CUIT` BIGINT NOT NULL CHECK (CUIT > 0),
-  `telefono_proveedor` INT NOT NULL CHECK (telefono_proveedor > 0),
-  `email_proveedor` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_proveedor`))
+  `CUIT` BIGINT NOT NULL CHECK (CUIT > 0), --  BIGINT: acepta números enteros grandes, debe tener algun contenido (por eso not null)), valida que el valor ingresado sea mayor a 0, evitando números negativos o cero
+  `telefono_proveedor` INT NOT NULL CHECK (telefono_proveedor > 0), -- entero, debe tener contenido, se hac el check para verificar que sea mayor a 0 (o sea que se válido)
+  `email_proveedor` VARCHAR(45) NOT NULL, -- varchar, creemos que con 45 caracteres es suficiente para un email, debe tener contenido
+  `cantidad_devoluciones` INT DEFAULT 0, -- veces que se devolvio
+  `devoluciones_mayor_a_5` TINYINT NULL CHECK (devoluciones_mayor_a_5 IN (0,1)), -- ojo con este proveedor, nos dio lotes defectuosos mas de 5 veces en un año
+   --  0 es que no es un proveedor con problemas, 1 es que es un mal proveedor.
+  PRIMARY KEY (`id_proveedor`)) 
 ENGINE = InnoDB;
-
 -- Inserto datos en proveedor
-INSERT INTO `mydb`.`proveedor` (id_proveedor, nombre_proveedor, CUIT, telefono_proveedor, email_proveedor) VALUES
+INSERT INTO mydb.proveedor (id_proveedor, nombre_proveedor, CUIT, telefono_proveedor, email_proveedor) VALUES
 (1, 'Farmacia Central', 20304050625, 1145678900, 'contacto@farmaciacentral.com'),
-(2, 'Distribuidora Salud', 20304050689, 1145678999, 'ventas@distribuidorasalud.com');
+(2, 'Distribuidora Salud', 20304050689, 1145678999, 'ventas@distribuidorasalud.com'),
+(3, 'Farmacia Dinucci', 20304050700, 1145678911, 'contacto@farmacianueva.com');
+
+
 -- -----------------------------------------------------
 -- Table `mydb`.`lote_droga`
 -- -----------------------------------------------------
@@ -111,9 +115,9 @@ DROP TABLE IF EXISTS `mydb`.`lote_droga` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`lote_droga` (
   `id_Lote_Droga` INT NOT NULL,
-  `precio` VARCHAR(45) NOT NULL CHECK (precio > 0),
+  `precio` VARCHAR(45) NOT NULL CHECK (precio > 0), -- 
   `fecha_ingreso_lote_droga` DATE NOT NULL,
-  `estado` TINYINT NOT NULL CHECK (estado IN (0,1)), -- 0: Inactivo, 1: Activo,
+  `estado` TINYINT CHECK (estado IN (0,1)), -- 0: Inactivo, 1: Activo, pusimos que pueda ser NULL ya que cuando compramos lote a proveedor todavia no realizamos el analisis para saber estado
   `droga_id_droga` INT NOT NULL,
   `proveedor_id_proveedor` INT NOT NULL,
   PRIMARY KEY (`id_Lote_Droga`, `droga_id_droga`, `proveedor_id_proveedor`),
@@ -131,9 +135,14 @@ CREATE TABLE IF NOT EXISTS `mydb`.`lote_droga` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 -- Inserto datos en lote_droga
-INSERT INTO `mydb`.`lote_droga` (id_Lote_Droga, precio, fecha_ingreso_lote_droga, estado, droga_id_droga, proveedor_id_proveedor) VALUES
+INSERT INTO mydb.lote_droga (id_Lote_Droga, precio, fecha_ingreso_lote_droga, estado, droga_id_droga, proveedor_id_proveedor) VALUES
 (1, 1000, '2024-06-01', 1, 1, 1),
+(3, 1100, '2024-07-01', 1, 1, 1),
+(4, 1300, '2024-07-10', 1, 3, 3),
 (2, 1200, '2024-06-10', 1, 2, 2);
+
+
+
 
 -- -----------------------------------------------------
 -- Table `mydb`.`lote_medicamento`
@@ -143,7 +152,7 @@ DROP TABLE IF EXISTS `mydb`.`lote_medicamento` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`lote_medicamento` (
   `id_lote_medicamento` INT NOT NULL,
   `fecha_ingreso` DATE NOT NULL,
-  `estado` VARCHAR(45) NOT NULL CHECK (estado IN ('Activo', 'Inactivo')),
+  `estado` VARCHAR(45) CHECK (estado IN ('Activo', 'Inactivo')), -- por default es null ya que no sabemos en que estado está el lote hasta analizarlo
   `medicamento_id_medicamento` INT NOT NULL,
   PRIMARY KEY (`id_lote_medicamento`, `medicamento_id_medicamento`),
   INDEX `fk_lote_medicamento_medicamento1_idx` (`medicamento_id_medicamento` ASC) VISIBLE,
@@ -155,10 +164,13 @@ CREATE TABLE IF NOT EXISTS `mydb`.`lote_medicamento` (
 ENGINE = InnoDB;
 
 -- Inserto datos en lote_medicamento
-INSERT INTO `mydb`.`lote_medicamento` (id_lote_medicamento, fecha_ingreso, estado, medicamento_id_medicamento) VALUES
-(1, '2024-06-05', 'Activo', 1),
-(2, '2024-06-12', 'Activo', 2);
-
+INSERT INTO mydb.lote_medicamento (id_lote_medicamento, fecha_ingreso, estado, medicamento_id_medicamento) VALUES
+(1, '2024-06-05', 'Activo', 223),
+(2, '2024-06-12', 'Activo', 345),
+(10, '2025-01-01', 'Activo', 223), -- Paracetamol
+(11, '2025-01-02', 'Activo', 345), -- Ibupirac cápsulas
+(12, '2025-01-03', 'Activo', 456), -- Ibupirac AI
+(13, '2025-01-04', 'Activo', 678); -- Voltaren
 -- -----------------------------------------------------
 -- Table `mydb`.`analisis`
 -- -----------------------------------------------------
@@ -189,11 +201,11 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cliente` (
   PRIMARY KEY (`id_cliente`))
 ENGINE = InnoDB;
 
--- Inserto datos en cliente
-INSERT INTO `mydb`.`cliente` 
+INSERT INTO mydb.cliente 
   (id_cliente, nombre_cliente, apellido_cliente, tipo_cliente, telefono_cliente, dirección_cliente) VALUES
 (1, 'Juan', 'Pérez', 'Particular', 1144556677, 'Av. Siempre Viva 123'),
-(2, 'Empresa XYZ', '', 'Empresa', 1144223344, 'Calle Falsa 456');
+(2, 'Empresa XYZ', '', 'Empresa', 1144223344, 'Calle Falsa 456'),
+(3, 'María', 'González', 'Particular', 1133445566, 'Av. Rivadavia 2100');
 
 -- -----------------------------------------------------
 -- Table `mydb`.`venta`
@@ -218,10 +230,18 @@ ENGINE = InnoDB;
 
 -- Inserto datos en venta
 
-INSERT INTO `mydb`.`venta`
+INSERT INTO mydb.venta
   (id_venta, Fecha_Venta, Total_Venta, Forma_De_Pago, Cantidad, cliente_id_cliente) VALUES
 (1, '2024-06-15', 300, 'Efectivo', 2, 1),
-(2, '2024-06-16', 450, 'Tarjeta', 3, 2);
+(2, '2024-06-16', 450, 'Tarjeta', 3, 2),
+(3, '2025-01-10', 600, 'Tarjeta', 4, 1),   
+(4, '2025-02-05', 800, 'Efectivo', 5, 2),  
+(5, '2025-03-12', 250, 'Transferencia', 1, 3),
+(6, '2025-04-20', 950, 'Tarjeta', 6, 1),  
+(7, '2025-05-03', 100, 'Efectivo', 1, 2),  
+(9, '2024-07-10', 200, 'Transferencia', 1, 3),
+(10, '2024-08-05', 300, 'Efectivo', 2, 4),
+(8, '2025-05-18', 700, 'Transferencia', 3, 4);
 -- -----------------------------------------------------
 -- Table `mydb`.`contiene`
 -- -----------------------------------------------------
@@ -249,10 +269,17 @@ ENGINE = InnoDB;
 
 -- Inserto datos en lote_medicamento
 
-INSERT INTO `mydb`.`contiene` 
-  (lote_medicamento_id_lote_medicamento, lote_medicamento_medicamento_id_medicamento, venta_id_venta, venta_cliente_id_cliente) VALUES
-(1, 1, 1, 1),
-(2, 2, 2, 2);
+INSERT INTO contiene VALUES 
+(10, 223, 3, 1),  -- cliente 1 compró Paracetamol en venta 3
+(10, 223, 6, 1),  -- cliente 1 de nuevo en venta 6
+(11, 345, 4, 2),  -- cliente 2 compró Ibupirac cápsulas
+(11, 345, 7, 2),  -- cliente 2 de nuevo
+(12, 456, 5, 3),  -- cliente 3 compró Ibupirac AI
+(13, 678, 8, 4),  -- cliente 4 compró Voltaren
+(2, 345, 2, 2),
+(1, 223, 9, 3),
+(2, 345, 10, 4),
+(1, 223, 1, 1);
 -- -----------------------------------------------------
 -- Table `mydb`.`analisis_medicamento`
 -- -----------------------------------------------------
@@ -406,6 +433,46 @@ CREATE TABLE IF NOT EXISTS `mydb`.`produce` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO mydb.produce (
+  lote_droga_id_Lote_Droga, lote_droga_droga_id_droga, lote_droga_proveedor_id_proveedor,
+  lote_medicamento_id_lote_medicamento, lote_medicamento_medicamento_id_medicamento
+) VALUES
+(1, 1, 1, 1, 223),  -- Acetaminofén → Paracetamol
+(2, 2, 2, 2, 345);  -- Ibuprofeno → Ibupirac
+
+
+-- inserto tabla de devoluciones
+CREATE TABLE IF NOT EXISTS devoluciones (
+  id_devolucion INT NOT NULL PRIMARY KEY,
+  
+  id_proveedor INT NOT NULL,                      -- El proveedor responsable del lote
+  
+  id_Lote_Droga INT NOT NULL,                     -- El lote de droga que se está devolviendo
+  
+  fecha_devolucion DATE NOT NULL,                 -- Fecha de la devolución
+  
+  cantidad INT NOT NULL CHECK (cantidad > 0),     -- Cantidad de unidades devueltas
+  
+  FOREIGN KEY (id_proveedor) REFERENCES proveedor(id_proveedor),
+  FOREIGN KEY (id_Lote_Droga) REFERENCES lote_droga(id_Lote_Droga)
+);
+
+
+INSERT INTO devoluciones (id_devolucion, id_proveedor, id_Lote_Droga, fecha_devolucion, cantidad) VALUES
+(1,1, 1, '2025-01-05', 50),
+(2, 1, 1, '2025-02-10', 60);
+INSERT INTO devoluciones (id_devolucion, id_proveedor, id_Lote_Droga, fecha_devolucion, cantidad) VALUES
+(3, 1, 1, '2025-03-05', 40),
+(4, 1, 1, '2025-04-06', 40),
+(5, 1, 1, '2025-08-05', 40);
+INSERT INTO devoluciones (id_devolucion, id_proveedor, id_Lote_Droga, fecha_devolucion, cantidad) VALUES
+(6, 1, 1, '2024-06-08', 20);
+INSERT INTO devoluciones (id_devolucion, id_proveedor, id_Lote_Droga, fecha_devolucion, cantidad) VALUES
+(7, 1, 1, '2024-04-08', 20);
+INSERT INTO devoluciones (id_devolucion, id_proveedor, id_Lote_Droga, fecha_devolucion, cantidad) VALUES
+(8, 1, 1, '2025-02-08', 20);
+
+-- ---
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
