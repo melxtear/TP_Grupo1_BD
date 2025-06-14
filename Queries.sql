@@ -23,7 +23,8 @@ JOIN
 WHERE 
     lm.id_lote_medicamento = 1;         
 
-
+--
+--
 -- b) Principal comprador de tal medicamento en 2025
 -- Elegimos el medicamento especifico: Paracetamol
 SELECT 
@@ -44,3 +45,43 @@ GROUP BY
 ORDER BY 
     total_comprado DESC                                -- Ordena de mayor a menor según lo comprado
 LIMIT 1; 
+--
+--
+-- c. Consultas adicionales
+-- 1. Listar todos los medicamentos y sus respectivos efectos adversos.
+
+SELECT 
+    m.nombre AS medicamento,               -- Nombre del medicamento
+    m.efectos_adversos                     -- Efectos adversos asociados a ese medicamento
+FROM 
+    medicamento m;  
+
+-- 2. Mostrar el total de ventas por medicamento en el año 2024.
+SELECT 
+    m.nombre AS medicamento,  -- Nombre del medicamento vendido
+    SUM(v.Total_Venta) AS total_ventas -- Suma de ventas asociadas a ese medicamento
+FROM 
+    venta v
+JOIN 
+    contiene co ON v.id_venta = co.venta_id_venta -- Relación entre venta y medicamento
+JOIN 
+    lote_medicamento lm ON co.lote_medicamento_id_lote_medicamento = lm.id_lote_medicamento
+JOIN 
+    medicamento m ON lm.medicamento_id_medicamento = m.id_medicamento
+WHERE 
+    YEAR(v.Fecha_Venta) = 2024 -- Solo se consideran ventas realizadas en 2024
+GROUP BY 
+    m.id_medicamento;  -- Agrupa por medicamento para sumar sus ventas
+
+-- 3. Listar los proveedores y la cantidad de lotes de droga que tienen activos.
+SELECT 
+    p.nombre_proveedor,   -- Nombre del proveedor
+    COUNT(ld.id_Lote_Droga) AS cantidad_lotes_activos -- Cantidad de lotes de droga activos que tiene el proveedor
+FROM 
+    proveedor p
+JOIN 
+    lote_droga ld ON p.id_proveedor = ld.proveedor_id_proveedor -- Relaciona proveedores con sus lotes de droga
+WHERE 
+    ld.estado = 1 -- Filtra solo los lotes de droga que están activos (1 = activo)
+GROUP BY 
+    p.id_proveedor; -- Agrupa por proveedor para contar sus lotes activos
