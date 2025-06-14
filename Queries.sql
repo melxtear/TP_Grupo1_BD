@@ -28,7 +28,7 @@ JOIN
 WHERE 
     lm.id_lote_medicamento = 1;       
 
-
+-- ----------------------------------------------------------------------
 -- b) Principal comprador de tal medicamento en 2025
 -- Elegimos el medicamento especifico: Paracetamol
 SELECT 
@@ -51,6 +51,7 @@ ORDER BY
 LIMIT 1;
 
 
+-- ------------------------------------------------------------------------------------------------------------
 -- c. Consultas adicionales
 -- 1. Listar todos los medicamentos y sus respectivos efectos adversos.
 
@@ -89,8 +90,9 @@ WHERE
     ld.estado = 1 -- Filtra solo los lotes de droga que están activos (1 = activo)
 GROUP BY 
     p.id_proveedor; -- Agrupa por proveedor para contar sus lotes activos
- 
- -- Consulta para listar los clientes que hicieron más de una compra
+
+
+ -- 4. Consulta para listar los clientes que hicieron más de una compra
 SELECT 
     c.id_cliente,                           -- ID del cliente
     c.nombre_cliente,                       -- Nombre del cliente
@@ -104,8 +106,9 @@ GROUP BY
     c.id_cliente
 HAVING 
     COUNT(v.id_venta) > 1;                 -- Filtra solo los que compraron más de una vez
-    
--- Medicamentos que requieren receta, vendidos a clientes particulares
+
+
+-- 5. Medicamentos que requieren receta, vendidos a clientes particulares
 -- Esta consulta muestra todos los medicamentos que requieren receta y que fueron vendidos a clientes particulares.
 -- Permite controlar si se está cumpliendo correctamente con la política de receta obligatoria.
 
@@ -127,24 +130,9 @@ JOIN
     cliente c ON c.id_cliente = v.cliente_id_cliente
 WHERE 
     m.requiere_receta = 1;                          -- Solo medicamentos que requieren receta
-    
--- *Proveedor con más devoluciones en el año 2025
 
-SELECT 
-    p.nombre_proveedor,                           -- Nombre del proveedor
-    SUM(d.cantidad) AS total_devoluciones         -- Total de unidades devueltas
-FROM 
-    devoluciones d
-JOIN 
-    proveedor p ON d.id_proveedor = p.id_proveedor
-WHERE 
-    YEAR(d.fecha_devolucion) = 2025               -- Filtro por año
-GROUP BY 
-    d.id_proveedor
-ORDER BY 
-    total_devoluciones DESC
-LIMIT 1;
 
+-- 6.Proveedor con más devoluciones en el año 2025
 SELECT 
     p.nombre_proveedor,                           -- Nombre del proveedor
     SUM(d.cantidad) AS total_devoluciones         -- Suma total de unidades devueltas por ese proveedor
