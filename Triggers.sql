@@ -1,5 +1,5 @@
 -- -------------------------------------------------------------------------
--- A.1) Trigger para asegurar que un lote de droga salga de cuarentena solo si todos sus análisis son satisfactorios.
+-- 3.A.1) Trigger para asegurar que un lote de droga salga de cuarentena solo si todos sus análisis son satisfactorios.
 
 drop trigger if exists trg_actualizar_estado_lote_droga;
 DELIMITER //
@@ -65,14 +65,13 @@ INSERT INTO mydb.analisis_d
 */
 
 
--- A.2) Trigger para asegurar que un lote de medicamento salga de cuarentena solo si todos sus análisis son satisfactorios.
+-- 3.A.2) Trigger para asegurar que un lote de medicamento salga de cuarentena solo si todos sus análisis son satisfactorios.
 DELIMITER //
 CREATE TRIGGER trg_actualizar_estado_lote_medicamento AFTER INSERT ON analisis_medicamento
 FOR EACH ROW
 BEGIN
   DECLARE todos_satisfactorios INT;
   -- Declara una variable para contar cuántos análisis NO son 'Aprobado' para el lote y medicamento recién insertados
-  
 
   SELECT COUNT(*) INTO todos_satisfactorios
   FROM analisis_medicamento
@@ -118,7 +117,8 @@ INSERT INTO analisis_medicamento (lote_medicamento_id_lote_medicamento, lote_med
 */
 
 
--- B) Agregar un trigger en la tabla proveedor cuando se hayan devuelto +5 lotes de droga en el año. Se actualiza en columnas de proveedor si
+-- 3.B) Agregar un trigger en la tabla proveedor cuando se hayan devuelto +5 lotes de droga en el año. 
+-- Se actualiza en columnas de proveedor (la cantidad y prinicipalmente la columna de devoluciones_mayor_a_5)
 DELIMITER //
 CREATE TRIGGER trg_update_proveedor_devoluciones
 AFTER INSERT ON devoluciones -- Esto se ejecuta automáticamente después de cada inserción de una fila en la tabla devoluciones.
@@ -147,4 +147,3 @@ BEGIN
 END;
 //
 DELIMITER 
--- drop trigger if exists trg_alerta_devoluciones;
