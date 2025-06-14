@@ -22,3 +22,25 @@ JOIN
     proveedor p ON p.id_proveedor = ld.proveedor_id_proveedor  -- Se obtiene la información del proveedor
 WHERE 
     lm.id_lote_medicamento = 1;         
+
+
+-- b) Principal comprador de tal medicamento en 2025
+-- Elegimos el medicamento especifico: Paracetamol
+SELECT 
+    c.nombre_cliente,                                  -- Nombre del cliente
+    c.apellido_cliente,                                -- Apellido del cliente
+    SUM(v.Total_Venta) AS total_comprado               -- Suma total de lo comprado por ese cliente
+FROM 
+    venta v                                            -- Tabla de ventas realizadas
+JOIN 
+    cliente c ON v.cliente_id_cliente = c.id_cliente   -- Relaciona cada venta con su cliente
+JOIN 
+    contiene co ON v.id_venta = co.venta_id_venta      -- Relaciona cada venta con los medicamentos que contiene
+WHERE 
+    co.lote_medicamento_medicamento_id_medicamento = 223  -- Filtra solo el medicamento específico (ej. Paracetamol)
+    AND YEAR(v.Fecha_Venta) = 2025                     -- Solo ventas ocurridas en el año 2025
+GROUP BY 
+    c.id_cliente                                       -- Agrupa los resultados por cliente
+ORDER BY 
+    total_comprado DESC                                -- Ordena de mayor a menor según lo comprado
+LIMIT 1; 
